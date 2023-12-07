@@ -49,11 +49,11 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(575, 396);
+            this.button1.Location = new System.Drawing.Point(549, 403);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(137, 25);
             this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
+            this.button1.Text = "Зарегистрироваться";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -125,7 +125,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(220, 95);
+            this.label2.Location = new System.Drawing.Point(221, 91);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(27, 13);
             this.label2.TabIndex = 10;
@@ -165,7 +165,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(36, 13);
             this.label6.TabIndex = 14;
-            this.label6.Text = "логие";
+            this.label6.Text = "логин";
             // 
             // label7
             // 
@@ -179,7 +179,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(221, 343);
+            this.label8.Location = new System.Drawing.Point(227, 342);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(37, 13);
             this.label8.TabIndex = 16;

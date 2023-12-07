@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Triumf_VkysaApp.Forms;
-using Triumf_VkysaApp.Forms.Admin;
 
 namespace Triumf_VkysaApp
 {
@@ -18,7 +14,7 @@ namespace Triumf_VkysaApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CreateOrder());
+            Application.Run(new LoginForm());
         }
     }
 }

@@ -76,7 +76,7 @@ namespace Triumf_VkysaApp.Forms
         {
             int employeeCode = int.Parse(textBox3.Text);
 
-            int tablecode = int.Parse(textBox2.Text);
+            int tablecode = Data.SelectedStolik;
 
             var date = DateTime.UtcNow;
 

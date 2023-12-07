@@ -26,12 +26,24 @@ namespace Triumf_VkysaApp
         }
 
         // Метод для получения данных из базы данных
-        public DataTable GetData(string query)
+        public DataTable GetData(string query, SqlParameter[] parameters)
         {
             DataTable dt = new DataTable();
-            SqlCommand cmd = new SqlCommand(query, connection);
-            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-            adapter.Fill(dt);
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand(query, connection))
+                {
+                    if (parameters != null)
+                    {
+                        cmd.Parameters.AddRange(parameters);
+                    }
+
+                    SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                    adapter.Fill(dt);
+                }
+            }
+
             return dt;
         }
 

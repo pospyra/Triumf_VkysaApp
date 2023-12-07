@@ -45,7 +45,8 @@ namespace Triumf_VkysaApp.Forms
             {
                 dbManager.ExecuteCommand(query);
                 MessageBox.Show("Клиент успешно добавлен!");
-                // Дополнительные действия после добавления клиента
+                new LoginForm().Show();
+                Hide();
             }
             catch (Exception ex)
             {
