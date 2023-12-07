@@ -1,15 +1,14 @@
 ﻿using System.Data.SqlClient;
 using System.Data;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Triumf_VkysaApp
 {
     public class DatabaseManager
     {
         private SqlConnection connection;
-        private static string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\недопрограммирование\Triumf_VkysaApp\DataBase\Triumf_Vkysa.mdf"";Integrated Security=True;Connect Timeout=30";
-
-        public DatabaseManager()
+        private static string connectionString = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""{Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName}\DataBase\Triumf_Vkysa.mdf"";Integrated Security=True;Connect Timeout=30"; public DatabaseManager()
         {
             connection = new SqlConnection(connectionString);
         }
